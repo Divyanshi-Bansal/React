@@ -11,8 +11,14 @@
 <body>
     <!-- <h1>Hello world</h1> -->
     <div id="root"></div>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+    <!-- We shouldn't use CDN links for react because everytime we use , they make a network call
+        2. It is difficult to manage the react version, currently we have 18 only, in future if we have 18.1 or some other minor
+        version too, we need to update these links manually.
+        3. That's why, we prefer installation of react by using npm. It is good practice. It is preferable because we have react
+        as a dependency in package and package-lock json files. 
+    -->
 
     <!-- React has hosted on CDN officially. we want to inject react into our code so we need react js file because react is js library.
      Browser only knows js, browser only have js engine so we don't need to inject any thing new for js, but we need to do it for react
@@ -33,6 +39,6 @@
         // root.render(heading);
         
     </script>
-    <script src="./App.js"></script>
+    <script type="module" src="./App.js"></script>
 </body>
 </html>

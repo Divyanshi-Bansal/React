@@ -1,3 +1,7 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+
 let heading = React.createElement("h1", {id:"heading", onClick:headingFunc}, "Hello world from React");
 let root = ReactDOM.createRoot(document.getElementById("root"));
 // all react code runs only in root .
@@ -12,9 +16,10 @@ function headingFunc(){
 
 
 let child = React.createElement("div",{id:"child"}, heading);
-let parent = React.createElement("div",{id:"parent"}, [child, child]);
+let parent = React.createElement("div",{id:"parent"}, [child]);
 
 root.render(parent);
 
-// React is library because it can work in a small portion of our app as well where root are.
+// React is library because it can work in a small portion of our app as well as where root are.
 // framework : it provides a complete structure to build our app
+

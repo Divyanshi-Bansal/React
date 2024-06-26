@@ -1,0 +1,39 @@
+NPM: node package manager
+- It is the package manager for node.js
+- Help Js Developers to easily shared/used package modules
+- Its a kind of repository which is a public collection of packages of open source code for node.Js
+
+Package.json: 
+- configuration for npm
+- manage all dependencies/library which is going to used in our application
+- It tracks which version is installed in your system
+
+Bundlers: 
+- bundles our app which can be pushed in production
+- eg. webpack, parcel, etc...
+- create-react-app : used webpack in BTS
+- we can easily use these by installing them by npm
+
+package/Dependency: is of two types
+1. Dev: when we develop our app, then we require dev dependencies
+2. normal: used in production also
+
+caret vs tilde in Dependency:
+- caret (^): when we use caret (^) it upgrades the minor version if available not major. so it is safe to use
+- tilde (`): It's used when we want major upgrade if available
+
+
+package.json vs package-lock.json
+- package.json: 
+    - It tracks which version is installed in your system
+    - There is caret and tilde to upgrade the version acc.
+- package-lock.json: 
+    - it locks the version, and keep the record of every exact version which is installed
+
+node modules:
+- collection of dependencies
+- fetch all the code from npm and stores in node modules
+- some dependencies are in the node modules that may need in X Dependency which is in package files.
+
+HMR: Hot Module Replacement 
+- change in your code, and server is automatically refresh.
