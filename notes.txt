@@ -37,3 +37,40 @@ node modules:
 
 HMR: Hot Module Replacement 
 - change in your code, and server is automatically refresh.
+
+Tree Shaking: 
+- in parcel: ??
+- process to eliminate the unused data from bundles
+
+JSX:
+- is not html in JS
+- HTML/xml like syntax in JS
+- its a syntax and core react element (React.createElement(....)), both are objects
+    - proof: here we give class name in JSX like className, but in html we use only class keyword.
+    - we use camel case for attributes in JSX
+- You can perform Js operations in html by using {}.
+- you can create react element with JSX
+- we use JSX in react instead of using core react elements because
+    - more readablity
+    - less complex to write
+    - JSX code looks more neatier
+- JS engine doesn't understand JSX, JS engine only understands es6. you can try JSX code in browser console itself, It'll throw error.
+- so how JSX works in react ?
+    - it transpiled before it reaches to the JS engine
+    - transpiled done by a babel module in parcel (the server we use to run react).
+- JSX is syntactic sugar for creating React elements.
+- Babel transpiles JSX into JavaScript (React.createElement() calls). Its a open source javascript compiler.
+- Parcel is a bundler that uses Babel to transpile JSX during the build process
+
+React:
+- react elements
+- react components
+    - everything in react is component: search bar is component, header/footer/cards/input everything is a component in react.
+    - reason: react is rendering everything through component. The file structure is include in component.
+    - there are 2 types of component:
+        - class component: old way of coding: creating by using js class
+        - functional component: new way of coding: creating by using js functions
+            - definition: JS function which returns some JSX or react element.
+
+Component composition:
+- when we use one component to another component.

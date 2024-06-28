@@ -1,25 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+const jsxHeading = <h1>JSX HEading</h1>
 
-let heading = React.createElement("h1", {id:"heading", onClick:headingFunc}, "Hello world from React");
-let root = ReactDOM.createRoot(document.getElementById("root"));
-// all react code runs only in root .
-// react comes with the philosphy that we need to manipulate react dom by using js
-// root.render(heading);
-
-
-
-function headingFunc(){
-    console.log("heading clicked");
+function ChildFunctionalComponent(){
+    return (
+        <div>
+            <h1>Functional Component</h1>
+        </div>
+    )
 }
 
+const number = 1000;
 
-let child = React.createElement("div",{id:"child"}, heading);
-let parent = React.createElement("div",{id:"parent"}, [child]);
+const Heading = () => {
+    return (
+        <div>
+            <ChildFunctionalComponent />
+            <ChildFunctionalComponent>Limit ?</ChildFunctionalComponent>
+            <h1>Functional Component in HEading as a element</h1>
+            {true == "true" ? "its a true match" : "Its not a true match"}
+            <h1>{number}</h1>
+        </div>
+    )
+}
 
-root.render(parent);
-
-// React is library because it can work in a small portion of our app as well as where root are.
-// framework : it provides a complete structure to build our app
-
+// ReactDOM.createRoot(document.getElementById("root")).render(jsxHeading);
+ReactDOM.createRoot(document.getElementById("root")).render(<Heading/>);
