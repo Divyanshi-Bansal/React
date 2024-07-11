@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import ToDoList from "./components/todoList/ToDoList";
 
 const jsxHeading = <h1>JSX HEading</h1>
 
@@ -16,11 +17,12 @@ const number = 1000;
 const Heading = () => {
     return (
         <div>
-            <ChildFunctionalComponent />
+            {/* <ChildFunctionalComponent />
             <ChildFunctionalComponent>Limit ?</ChildFunctionalComponent>
             <h1>Functional Component in HEading as a element</h1>
             {true == "true" ? "its a true match" : "Its not a true match"}
-            <h1>{number}</h1>
+            <h1>{number}</h1> */}
+            <ToDoList/>
         </div>
     )
 }
