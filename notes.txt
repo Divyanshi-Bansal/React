@@ -74,3 +74,15 @@ React:
 
 Component composition:
 - when we use one component to another component.
+
+React hooks
+- normal js utitlity functions used by react
+- wrote by facebook devs
+- there are multiple hooks:
+    - useState() : used to create a state variable (because it maintains the state of the component)
+        - local state variable : scope within the component.
+        - const [var, setVar] = useState(<DEFAULT_VALUE>)
+        - the set value (second parameter): used to update/edit the original state.
+        - whenever a state variable updates, react will re-renders the components.
+    - useEffect()
+    - useContext()
