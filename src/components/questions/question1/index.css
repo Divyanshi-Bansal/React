@@ -1,0 +1,33 @@
+.fileName {
+  margin-left: 10px;
+}
+.folderName {
+  padding: 10px;
+}
+
+.folder {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  height: 25px;
+  background-color: antiquewhite;
+}
+.folderDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.folderStructure {
+  /* border: 1px solid black; */
+  margin: 10px;
+}
+
+.structureBtn {
+  height: 20px;
+  background-color: burlywood;
+  margin-right: 10px;
+}
+

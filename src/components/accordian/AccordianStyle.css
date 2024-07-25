@@ -1,0 +1,12 @@
+.accordian-item{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.accordianSubmitBtn{
+    display: block;
+    
+}
